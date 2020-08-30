@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lbl_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/Titulo"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
+
+    <RadioGroup
+        android:id="@+id/rbg_Sexo"
+        android:layout_width="146dp"
+        android:layout_height="87dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/rbg_Tipo_Zapato"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.158"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintVertical_bias="0.654">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblSexo"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/rbt_Hombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtHombre"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbt_Mujer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtMujer"></RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rbg_Tipo_Zapato"
+        android:layout_width="139dp"
+        android:layout_height="89dp"
+        android:layout_marginBottom="204dp"
+        app:layout_constraintBottom_toTopOf="@+id/lbl_resultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.154"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblTipoZapato"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/rbt_Zapatilla"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtZapatilla"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbt_Clasico"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtClasico"></RadioButton>
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/rbg_Marca"
+        android:layout_width="146dp"
+        android:layout_height="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCantidad"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbg_Tipo_Zapato"
+        app:layout_constraintVertical_bias="0.554">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblMarca"
+            android:textAlignment="center">
+
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/rbt_Nike"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtNike"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbt_Adidas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtAdidas"></RadioButton>
+
+        <RadioButton
+            android:id="@+id/rbt_Puma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rbtPuma"></RadioButton>
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/txtCantidad"
+        android:layout_width="148dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginBottom="44dp"
+        android:ems="10"
+        android:hint="@string/txtCantidad"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Calcular"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rbg_Tipo_Zapato"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/btn_Calcular"
+        android:layout_width="260dp"
+        android:layout_height="47dp"
+        android:layout_marginBottom="136dp"
+        android:onClick="calcular"
+        android:text="@string/btnCalcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lbl_resultado"
+        android:layout_width="165dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="52dp"
+        android:text="@string/txtTotal"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_Calcular"
+        app:layout_constraintStart_toStartOf="@+id/txtCantidad">
+
+    </TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

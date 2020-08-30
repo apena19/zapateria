@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">" shop"</string>
+    <string name="Titulo">Shoe Workshop</string>
+    <string name="cantidad">Enter Quantity</string>
+    <string name="rbtHombre">Men</string>
+    <string name="rbtMujer">Women</string>
+    <string name="lblSexo">Sex</string>
+    <string name="lblTipoZapato">Type of shoes</string>
+    <string name="rbtZapatilla">Sneakers</string>
+    <string name="rbtClasico">Classic</string>
+    <string name="lblMarca">Brand</string>
+    <string name="rbtNike">Nike</string>
+    <string name="rbtAdidas">Adidas</string>
+    <string name="rbtPuma">Puma</string>
+    <string name="btnCalcular">Calculate price</string>
+    <string name="txtCantidad">Quantity</string>
+    <string name="txtTotal">0</string>
+    <string name="errorCantidad">Required</string>
+    <string name="errorSexo">Required Gender Field</string>
+    <string name="errorTipoZapato">Required Shoe Type Field</string>
+    <string name="errorMarca">"Required Brand Field "</string>
+</resources>

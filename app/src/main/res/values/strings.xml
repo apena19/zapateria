@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Tienda</string>
+    <string name="Titulo">"Taller de Zapatos "</string>
+    <string name="cantidad">Ingrese la Cantidad</string>
+    <string name="rbtHombre">Hombres</string>
+    <string name="rbtMujer">Mujeres</string>
+    <string name="lblSexo">Sexo</string>
+    <string name="lblTipoZapato">Tipo de Zapato</string>
+    <string name="rbtZapatilla">Zapatilla</string>
+    <string name="rbtClasico">Clasico</string>
+    <string name="lblMarca">Marca</string>
+    <string name="rbtNike">Nike</string>
+    <string name="rbtAdidas">Adidas</string>
+    <string name="rbtPuma">Puma</string>
+    <string name="btnCalcular">Calcular Precios</string>
+    <string name="txtCantidad">Cantidad</string>
+    <string name="txtTotal">0</string>
+    <string name="errorCantidad">Campo Obligatorio</string>
+    <string name="errorSexo">Campo Sexo Obligatorio</string>
+    <string name="errorTipoZapato">Campo Tipo de Zapato Obligatorio</string>
+    <string name="errorMarca">Campo Marca Obligatorio</string>
+</resources>
